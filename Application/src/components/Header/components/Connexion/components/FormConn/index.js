@@ -24,13 +24,15 @@ const FormConn = ({ toggleAuth }) => {
 		>
   			<div className="form-group">
   				<input
-  					type="email" 
+					  type="email" 
+					  name="email"
   					className="form-control"
   					placeholder="Email"/>
   			</div>
   			<div className="form-group">
   				<input 
-  					type="password"
+					  type="password"
+					  name="password"
   					className="form-control"
   					placeholder="Mot de passe"/>
   			</div>

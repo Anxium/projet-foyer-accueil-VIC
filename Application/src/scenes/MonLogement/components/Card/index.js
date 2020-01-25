@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 import './style.scss' // Importe le scss
 import photo from '../../../../img/maison.jpg'
 
 const Card = ({ type, taille, lieu, prix }) => {
 	return (
 		<div className="card logement-card mb-5">
-            <img src={photo} className="card-img-top" alt="Photo d'une maison"/>
+            <img src={photo} className="card-img-top" alt="Maison à vendre"/>
             <div className="logement-card-body">
                 <div className="col-md-7 logement-card-info pt-3">
                     <p>{type}</p>

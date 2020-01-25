@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react'
+import React, { Component } from 'react'
 import './style.scss'
 import Jobcard  from './components/Jobcard'
 import TitleSection from '../../components/TitleSection'
