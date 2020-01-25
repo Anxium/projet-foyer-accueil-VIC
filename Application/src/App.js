@@ -9,6 +9,13 @@ import Footer from './components/Footer'
 import ContainerRoute from './components/ContainerRoute'
 
 class App extends Component {
+
+  componentDidMount() {
+    // Here is where you need to put the logic for your auth system to check if the user is authenticated or not
+    const isUserAuth = localStorage.getItem('isAuth') ? localStorage.getItem('isAuth') : localStorage.setItem('isAuth', false); 
+    console.log(isUserAuth ? 'The user is connected.' : 'The user is not connected.')
+  }
+
   render() {
     return (
       <Router>
