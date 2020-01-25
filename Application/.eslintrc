@@ -1,0 +1,22 @@
+{
+	"plugins": ["react-hooks", "security"],
+	"extends": [
+		"react-app",
+		"eslint:recommended",
+		"plugin:prettier/recommended",
+		"plugin:security/recommended"
+	],
+	"rules": {
+		"react-hooks/rules-of-hooks": "error",
+		"react-hooks/exhaustive-deps": "warn"
+	},
+	"globals": {
+		"window": true,
+		"document": true,
+		"localStorage": true,
+		"test": true,
+		"describe": true,
+		"expect": true,
+		"it": true
+	}
+}
