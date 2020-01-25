@@ -1,16 +1,15 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
-import './index.scss'
-
+import './index.scss';
 
 class DetailLogement extends Component {
 	render() {
 		return (
-			<div className="row remarques">
-                <p>TEST AFFICHAGE</p>
+			<div className='row remarques'>
+				<p>TEST AFFICHAGE</p>
 			</div>
 		);
 	}
 }
 
-export default DetailLogement
+export default DetailLogement;

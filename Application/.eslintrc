@@ -1,5 +1,5 @@
 {
-	"plugins": ["react-hooks", "security"],
+	"plugins": ["prettier", "react-hooks", "security"],
 	"extends": [
 		"react-app",
 		"eslint:recommended",

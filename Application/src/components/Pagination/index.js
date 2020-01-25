@@ -1,13 +1,9 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
 
 class Pagination extends Component {
 	render() {
-		return(
-			<div>
-				Pagination
-			</div>
-		);
+		return <div>Pagination</div>;
 	}
 }
 
-export default Pagination
+export default Pagination;
