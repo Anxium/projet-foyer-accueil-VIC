@@ -1,4 +1,4 @@
-import React, { Component, Fragment } from 'react'
+import React, { Component } from 'react'
 import { Switch, Route } from "react-router-dom";
 
 //Import components globaux
@@ -20,28 +20,30 @@ import SignUpPage from '../../scenes/Inscription'
 class ContainerRoute extends Component {
 	render() {
 		return (
-			<Fragment>
-				<Switch>
-				  <div className="row">
-        		<div className="col-md-2 col-nav d-flex flex-column align-items-center">
-              <Route exact path="/" component={NavAccueil} />
-              <Route path="/:connexion" component={NavJeune} />
-            </div>
-              <div className="col-md-10">
-								<Route exact path="/" component={Accueil} />
-                <Route path="/profiljeune" component={Profiljeune} />
-          			<Route path="/monparrain" component={MonParrain} />
-          			<Route path="/moncoach" component={MonCoach} />
-          			<Route path="/mesformations" component={MesFormations} />
-                <Route path="/monlogement" component={MonLogement} />
-								<Route path="/monjob" component={MonJob} />
-                <Route path="/MonJob/Postuler" component={Postuler} />
-                <Route path="/DetailLogement" component={DetailLogement} /> 
-								<Route path="/Inscription" component={SignUpPage} /> 
-              </div>
-            </div>
-        	</Switch>
-    		</Fragment>
+			<>
+				<div className="row">
+					<div className="col-md-2 col-nav d-flex flex-column align-items-center">
+						<Switch>
+							<Route exact path="/" component={NavAccueil} />
+							<Route path="/:connexion" component={NavJeune} />
+						</Switch>
+					</div>
+					<div className="col-md-10">
+						<Switch>
+							<Route exact path="/" component={Accueil} />
+							<Route path="/profiljeune" component={Profiljeune} />
+							<Route path="/monparrain" component={MonParrain} />
+							<Route path="/moncoach" component={MonCoach} />
+							<Route path="/mesformations" component={MesFormations} />
+							<Route path="/monlogement" component={MonLogement} />
+							<Route path="/monjob" component={MonJob} />
+							<Route path="/MonJob/Postuler" component={Postuler} />
+							<Route path="/DetailLogement" component={DetailLogement} /> 
+							<Route path="/Inscription" component={SignUpPage} /> 
+						</Switch>
+					</div>
+				</div>
+    		</>
 		);
 	}
 }

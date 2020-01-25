@@ -52,7 +52,7 @@ class Connexion extends Component {
 				<div
 					className="modal fade modal-conn"
 					id="conn"
-					tabindex="-1" 
+					tabIndex="-1" 
 					role="dialog" 
 					aria-labelledby="conn"
 					aria-hidden="true">

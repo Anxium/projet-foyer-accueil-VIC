@@ -24,7 +24,7 @@ const FormConn = ({ profile }) => {
   					id="remember"/>
   				<label 
   					className="form-check-label"
-  					for="remember">
+  					htmlFor="remember">
   					Se souvenir de moi
   				</label>
   			</div>

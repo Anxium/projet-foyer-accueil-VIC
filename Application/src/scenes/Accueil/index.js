@@ -11,7 +11,8 @@ class Accueil extends Component {
             <Fragment>
                 <div className="row"> {/*Div globale du logo, du titre et du descriptif */}
                     <div className="col-md-5 offset-md-1">
-                        <img className="logoVic" src={logo} alt="" srcset="" /></div> {/* Logo Vic */}
+                        <img className="logoVic" src={logo} alt="" srcSet="" />
+                    </div> {/* Logo Vic */}
                     <div className="col-md-4 titreVic"><h1>Société royale protectrice de l'enfance</h1>
                         <p className="text-justify descriptionVic">La société royale protectrice de l'enfance collabore avec quatre associations qui prennent en charge l'aspect pédagogique par une action de prévention ou encore par l'hébergement de jeunes au sein de leurs établissements. Ces services sont agréés par la Communauté Française Wallonie Bruxelles. </p></div>
                 </div>
@@ -29,7 +30,7 @@ class Accueil extends Component {
                 <div className="container-fluid">
                     <div className="row">
                         <div className="col-md-2 offset-md-1 paEvent"> {/* A appeler 3 fois quand il sera devenu un component */}
-                            <img className="paExempleEvent" src={photoevent} alt="" srcset="" /> {/* Photo illustratrice d'un event */}
+                            <img className="paExempleEvent" src={photoevent} alt="" srcSet="" /> {/* Photo illustratrice d'un event */}
                             <div className="paEventDate"> {/* Date de l'event */}
                                 <span>12/03</span>
                             </div>
@@ -41,7 +42,7 @@ class Accueil extends Component {
 
                 <div className="container-fluid">
                     <div className="row">
-                        <button type="button" class="btnMore btn-primary col-md-2 offset-md-4">Afficher plus</button> {/*Bouton Afficher plus d'évènements */}
+                        <button type="button" className="btnMore btn-primary col-md-2 offset-md-4">Afficher plus</button> {/*Bouton Afficher plus d'évènements */}
                     </div>
                 </div>
 
@@ -68,7 +69,7 @@ class Accueil extends Component {
                     </form>
 
                     <form>
-                        <div class="col-md-6 offset-md-1 paObjectMessage ">
+                        <div className="col-md-6 offset-md-1 paObjectMessage ">
                             <input type="text" className="form-control" placeholder="Objet du message"></input> {/*Objet du message */}
                         </div>
                     </form>
