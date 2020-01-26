@@ -21,9 +21,30 @@ Se déplacer à l'intérieur du dossier 'Application'
 ```
 cd projet-foyer-accueil-VIC/Application
 ```
-Installer les dépendances et lancer l'application en local
+Installer les dépendances
 ```
-npm i && npm start
+npm i
+```
+
+## Variables d'environnement
+
+Pour que l'application fonctionne correctement, il faut insérer ces variables d'environnement dans un fichier .env se trouvant dans le dossier "Application"
+
+```
+REACT_APP_FIREBASE_API_KEY=
+REACT_APP_FIREBASE_AUTH_DOMAIN=
+REACT_APP_FIREBASE_DATABASE_URL=
+REACT_APP_FIREBASE_PROJECT_ID=
+REACT_APP_FIREBASE_STORAGE_BUCKET=
+REACT_APP_FIREBASE_MESSAGING_SENDER_ID=
+```
+
+## Lancement
+
+Pour lancer l'application, il faut se trouver dans le dossier "Application" et effectuer cette commande:
+
+```
+npm start
 ```
 
 ## Code guidelines
@@ -41,7 +62,7 @@ Cela permet aussi d'avoir une certaine "qualité" dans le code
     
     ```
     {
-        "editor.formatOnSave: "true"
+        "editor.formatOnSave": true
     }
     ```
     dans votre configuration de vscode (settings.json).
