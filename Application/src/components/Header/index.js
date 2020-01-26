@@ -8,7 +8,7 @@ import FormConn from './components/Connexion/components/FormConn';
 
 class Header extends Component {
 	state = {
-		isAuth: false,
+		isAuth: 'false',
 	};
 
 	componentDidMount() {

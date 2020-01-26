@@ -3,7 +3,7 @@ import React from 'react';
 const FormConn = ({ toggleAuth }) => {
 	const setAuth = e => {
 		e.preventDefault();
-		toggleAuth(true);
+		toggleAuth('true');
 
 		const fade = document.getElementsByClassName('modal-backdrop')[0];
 		const modal = document.getElementsByClassName('modal')[0];
