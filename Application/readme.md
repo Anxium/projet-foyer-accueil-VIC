@@ -2,69 +2,61 @@
 
 Vous trouverez dans ce dossier tous les fichiers liés à l'application ainsi que le détail des opérations réalisées sur ce **readme**. 
 
-## Initialisation de l'application react.
+## Initialisation de l'application React.js
 
-Arpès avoir installer sur nos ordinateurs : 
+### Prérequis
 
-* [Node.js](https://nodejs.org/en/) : télécharger et installer pour Windows et MAC
-* [Node.js](https://linuxize.com/post/how-to-install-node-js-on-ubuntu-18.04/#install-node-js-from-the-nodesource-repository) : Installation de Node.js et npm pour UBUNTU
-* [Cmder](http://cmder.net/) : pas obligatoire mais préférable si vous êtes sur windows
-* [Hyper](https://hyper.is/) : pas obligatoire mais préférable si vous êtes sur mac/linux
-* [React DevTools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi) : permet d'avoir un affichage des erreurs en réact sur google chrome "débug"
-* [VS Code](https://code.visualstudio.com/) : vous connaissez, pourquoi vscode me direz-vous? car il y a des plugins intéressants pour react
-* [Standard.js](https://standardjs.com/) : code standardisé en js (plug-in VScode)
+* [Node.js](https://nodejs.org/en/) pour windows et mac
+* [Node.js](https://github.com/nodesource/distributions/blob/master/README.md) pour ubuntu
+* [Cmder](http://cmder.net/) Optionnel | Console pour windows
+* [Hyper](https://hyper.is/) Optionnel | Console pour ubuntu et mac
+* [React DevTools](https://chrome.google.com/webstore/detail/react-developer-tools/fmkadmapgofadopljbjfkapdkoienihi) pour débug votre application depuis la console du navigateur
 
-Importation des fichiers de bases nécessaire pour faire tourner une application react, via le terminal: 
-(à ne réaliser qu'à la création d'un site en react)
-
-* `cd projet-foyer-accueil-VIC/Application` (se placer dans le repo au bon endroit)
-* `npx create-react-app vic` (importe les fichiers nécessaire à une app react)
-
-Lancer l'application sur un serveur local, dans le terminal : 
-
-* `cd projet-foyer-accueil-VIC/Application/vic` (se placer dans le repo au bon endroit)
-* `npm start` (lance l'application sur un serveur local)
-
-**Si vous avez cloné ce repo en local ou l'avez fork, il vous faut:**
-
-* vous rendre dans le fichier vic sur votre machine
-* `npm install` (installe localement les dépendances pour faire tourner react)
-* `npm start` (lance l'application sur un serveur local)
-
-## Installation de bootstrap.
-
-Dans le terminal : `npm install bootstrap`
-
-Dans le fichier `vic/src/index.js`: écrire `import 'bootstrap/dist/css/bootstrap.min.css';`
-
-## Installation de SASS/SCSS
-
-Dans le terminal : `npm install node-sass`
-
-A partir de la react va compiler lui même vos Scss ou Sass.
-
-## Utiliser les icones Font-Awesome avec React
-
-**Installer la librairie Font-Awesome**
-
+## Installation
+Cloner le repo là où vous désirez l'installer
 ```
-$ npm i --save @fortawesome/fontawesome-svg-core
-$ npm i --save @fortawesome/free-solid-svg-icons
-$ npm i --save @fortawesome/react-fontawesome
+git clone git@github.com:Anxium/projet-foyer-accueil-VIC.git
+```
+Se déplacer à l'intérieur du dossier 'Application'
+```
+cd projet-foyer-accueil-VIC/Application
+```
+Installer les dépendances et lancer l'application en local
+```
+npm i && npm start
 ```
 
-**Importer les icones que on veut utiliser dans nos components**
+## Code guidelines
 
-```JS
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faCoffee } from '@fortawesome/free-solid-svg-icons'
+Qu'est ce que "code guidelines"? C'est simplement un ensemble de règles qui permettent aux développeurs d'un même projet de coder de la même façon, avec la même syntaxe, les mêmes indentations, ... 
+Cela permet aussi d'avoir une certaine "qualité" dans le code
+
+### Formater le code automatiquement
+
+ Il y a deux façons de formater son code automatiquement dans ce projet:
+
+* A chaque commit, le code sera vérifié et corrigé automatiquement, sans que vous ayez besoin de faire quoi que ce soit.
+
+* A chaque enregistrement dans son éditeur, ce qui actualisera à chaque save. Mais pour cela il faut ajouter:
+    
+    ```
+    {
+        "editor.formatOnSave: "true"
+    }
+    ```
+    dans votre configuration de vscode (settings.json).
+    
+
+### Formater le code via ligne de commande
+
+Il existe une commande dans ce projet qui permet de formatter tous les fichiers {.js, .jxs}
+
+```
+npm run lint
 ```
 
-**Placer l'icone dans le Jsx**
+## Auteur
 
-```JS
-<FontAwesomeIcon icon={faCoffee} />
-```
+* **BeCode** - *A school to address the skills gap in an inclusive way* - [be<\/code>](https://github.com/becodeorg)
 
-pour plus d'info lire la [doc](https://www.npmjs.com/package/@fortawesome/react-fontawesome)
-
+Vous pouvez voir la [liste complète des contributeurs](https://github.com/Anxium/projet-foyer-accueil-VIC/graphs/contributors) qui ont participé à ce projet
