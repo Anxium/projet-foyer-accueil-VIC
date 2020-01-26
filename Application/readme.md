@@ -62,7 +62,7 @@ Cela permet aussi d'avoir une certaine "qualité" dans le code
     
     ```
     {
-        "editor.formatOnSave: "true"
+        "editor.formatOnSave": true
     }
     ```
     dans votre configuration de vscode (settings.json).
